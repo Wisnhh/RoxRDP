@@ -975,25 +975,31 @@ end
       "fields": [
         {
           "name": "<:ava:1443432607726571660> **Information Account**",
-          "value": "**Status:** Breaking Block With Taking Black Gems\n**Name:** `]] .. Nick .. [[`\n**World:** `]] .. WorldName .. [[`\n**Magplant:** `]] .. Now .. [[ / ]] .. #Mag .. [[`",
+          "value": " 『 <:ava:1443432607726571660> 』**Name:** `]] .. Nick .. [[`\n 『 <:globe:1443460850248716308> 』**World:** `]] .. WorldName .. [[`\n 『 <:magplant:1443461129258008730> 』**Magplant:** `]] .. Now .. [[ / ]] .. #Mag .. [[`",
           "inline": false
         },
 
         {
           "name": "**Consumable Stock**",
-          "value": "<:arroz:1435565886638526598> Arroz: `]] .. Arroz .. [[`\n<:clover:1432995542367211561> Clover: `]] .. Clover .. [[`\n<:songpyeon:1432995023682801664> Songpyeon: `]] .. Songpyeon .. [[`",
+          "value": "『 <:arroz:1435565886638526598> 』 **Arroz:** `]] .. Arroz .. [[`\n『 <:clover:1432995542367211561> 』 **Clover:** `]] .. Clover .. [[`\n『 <:songpyeon:1432995023682801664> 』 **Songpyeon:** `]] .. Songpyeon .. [[`",
+          "inline": false
+        },
+
+        {
+          "name": "**Gems Information**",
+          "value": "『 <:gems:1443458682896777286> 』**Gems:** `]] .. FNum(Gems) .. [[`\n『 <:bgems:1443432737317982342> 』 **Bgems:** `]] .. FNum(BGems) .. [[`",
           "inline": false
         },
 
         {
           "name": "**Floating Items**",
-          "value": "<:bgems:1443432737317982342> Black Gems: `]] .. BGems .. [[`\n<:pgems:1443432703365087385> Pink Gems: `]] .. PGems .. [[`",
+          "value": "『 <:bgems:1443432737317982342> 』 **Bgems:**`]] .. BGems .. [[`\n<:『 <:pgems:1443432703365087385> 』 **Pgems** `]] .. PGems .. [[`",
           "inline": false
         },
 
         {
           "name": "**Total Lock**",
-          "value": "<:ireng:1443432671949881436>: `]] .. BLK .. [[`\n<:dl:1435564709913956373>: `]] .. DL .. [[`\n<:bgl:1435564733796323348>: `]] .. BGL .. [[`",
+          "value": " 『 <:ireng:1443432671949881436> 』 `]] .. BLK .. [[`\n 『 <:bgl:1435564733796323348> 』 `]] .. BGL .. [[`\n 『 <:dl:1435564709913956373> 』 `]] .. DL .. [[`",
           "inline": false
         },
 
