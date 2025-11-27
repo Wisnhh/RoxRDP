@@ -962,59 +962,62 @@ end
     else
       BGemsBefore = BGems
     end
-    Payload = [[
-{"embeds":[
-  {
-    "title":"<a:verifieds:1407221429568536616> PNB LOG",
-    "fields":[
-      {
-        "name":"<:yes:977348158692671528> Account",
-        "value":"]] .. Nick .. [[",
-        "inline":false
+   Payload = [[
+{
+  "embeds": [
+    {
+      "title": "🛠️ AUTO PNB STATUS",
+      "color": 2895667,
+      "thumbnail": {
+        "url": "https://pin.it/2kq04LNXk"
       },
-      {
-        "name":"<:jammed:1412036430783582208> Information",
-        "value":"]] .. WorldName .. [[",
-        "inline":false
-      },
-      {
-        "name":"<:magplant:1380675170603237428> Magplant",
-        "value":"]] .. Now .. [[ / ]] .. #Mag .. [[",
-        "inline":false
-      },
-      {
-        "name":"<:antidote:1412039873950519348> Consumables",
-        "value":"]] .. Songpyeon .. [[ <:songpyeon:1412036404292223108> ]] .. Clover .. [[ <:clover:1412036362735190048> ]] .. Arroz .. [[ <:arroz:1412036332640800859>",
-        "inline":false
-      },
-      {
-        "name":"<:Worldlock:977344300004294666> Total Locks",
-        "value":"]] .. BLK .. [[ <:ireng:1344481043864092672> ]] .. BGL .. [[ <:bgl:1344293284201369620> ]] .. DL .. [[ <:dl:1370773297930702989>",
-        "inline":false
-      },
-      {
-        "name":"<:gems:1378917469082751067> Current Gems",
-        "value":"]] .. FNum(Gems) .. [[",
-        "inline":false
-      },
-      {
-        "name":"<:gems:1378917469082751067> Gems Drop",
-        "value":"]] .. FNum(BGems) .. [[ <:bgems:1412036304715120791> ]] .. FNum(PGems) .. [[ <:pgems:1412036250927628369>",
-        "inline":false
-      },
-      {
-        "name":"<:time:1375787792285564988>️ Uptime",
-        "value":"]] .. FTime(os.time() - StartTime) .. [[",
-        "inline":false
+
+      "fields": [
+        {
+          "name": "📄 **Information Account**",
+          "value": "**Status:** Breaking Block With Taking Black Gems\n**Name:** `]] .. Nick .. [[`\n**World:** `]] .. WorldName .. [[`\n**Magplant:** `]] .. Now .. [[ / ]] .. #Mag .. [[`",
+          "inline": false
+        },
+
+        {
+          "name": "🥗 **Consumable Stock**",
+          "value": "🍙 Arroz: `]] .. Arroz .. [[`\n🍀 Clover: `]] .. Clover .. [[`\n🎐 Songpyeon: `]] .. Songpyeon .. [[`",
+          "inline": false
+        },
+
+        {
+          "name": "💎 **Gems Information**",
+          "value": "**Current:** `]] .. FNum(Gems) .. [[`\n**PGems:** `]] .. FNum(PGems) .. [[`\n**BGems:** `]] .. FNum(BGems) .. [[`",
+          "inline": false
+        },
+
+        {
+          "name": "📦 **Floating Items**",
+          "value": "🖤 Black Gems: `]] .. BGems .. [[`\n💗 Pink Gems: `]] .. PGems .. [[`",
+          "inline": false
+        },
+
+        {
+          "name": "🔐 **Total Lock**",
+          "value": "🟪 Black Lock: `]] .. BLK .. [[`\n🔷 Diamond Lock: `]] .. DL .. [[`\n🟦 Blue Gem Lock: `]] .. BGL .. [[`",
+          "inline": false
+        },
+
+        {
+          "name": "⏳ **PNB Uptime**",
+          "value": "`]] .. FTime(os.time() - StartTime) .. [[`",
+          "inline": false
+        }
+      ],
+
+      "footer": {
+        "text": "PNB Log • Updated at ]] .. os.date("%H:%M") .. [["
       }
-    ],
-    "footer":{"text":"Script Made By Dederika (Today At ]] .. os.date("%H:%M") .. [[)"},
-    "thumbnail": {
-        "url": "http://cdn.discordapp.com/attachments/1390899100668399666/1396485265161195653/dederika_store.png"
     }
-  }
-]
-}]]
+  ]
+}
+]]
+
     SendWebhook(WebhookUrl, Payload)  
 end
 
