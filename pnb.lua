@@ -698,7 +698,7 @@ action|respawn
 ]])
       Sleep(3000)
     end
-    LogToConsole(("`9[DEDERIKA] `1Stop PnB! Last Magplant On #%d"):format(Now))
+    LogToConsole(("`bDOUGHLAS `1Stop PnB! Last Magplant On #%d"):format(Now))
     CheatStopped = true
   end
   if GetRemote then
@@ -722,7 +722,7 @@ action|respawn
                 if lx == pnbX and ly == pnbY then
                   PendingCheatOn = false
                   CheatOn = true
-                  LogToConsole("`9[DEDERIKA] `1Arrived at PnB: enabling CheatOn.")
+                  LogToConsole("`bDOUGHLAS `1Arrived at PnB: enabling CheatOn.")
                   if VerticalPNB then
                     ChangeValue("[C] Ghost mode", true)
                     FindTPVertical(pnbX, pnbY)
@@ -742,7 +742,7 @@ action|respawn
               CheatOn = false
               CheatTurnOn()
               LogToConsole(string.format(
-                "`9[DEDERIKA] `1Start PnB! On Position X : `2%d, `1Y : `2%d",
+                "`bDOUGHLAS `1Start PnB! On Position X : `2%d, `1Y : `2%d",
                 pnbX, pnbY
               ))
             end
@@ -765,7 +765,7 @@ action|respawn
             SafeFindPath(m.x, m.y - 1, 550)
             Wrench(Mag[Now].x, Mag[Now].y)
           else
-            LogToConsole("`9[DEDERIKA] `1AutoPNB: Current mag blocked, advancing to next.")
+            LogToConsole("`bDOUGHLAS `1AutoPNB: Current mag blocked, advancing to next.")
             Now = (Now == #Mag) and 1 or (Now + 1)
           end
         else
@@ -778,7 +778,7 @@ action|respawn
       end
     elseif not m and m.x and m.y then
       Now = (Now == #Mag) and 1 or (Now + 1)
-      LogToConsole("`9[DEDERIKA] `1AutoPNB: Current mag missing, advancing to next.")
+      LogToConsole("`bDOUGHLAS `1AutoPNB: Current mag missing, advancing to next.")
       local nextm = Mag[Now]
       if nextm and nextm.x and nextm.y then
         SafeFindPath(nextm.x, nextm.y - 1, 550)
@@ -1054,7 +1054,7 @@ function TakeConsumes()
   if TakeConsumable then
     if GetWorld() ~= nil then
       if not ConsumableID or #ConsumableID == 0 then
-        LogToConsole("`9[DEDERIKA] `4No ConsumableID configured.")
+        LogToConsole("`bDOUGHLAS `4No ConsumableID configured.")
         return
       end
       for _, cid in ipairs(ConsumableID) do
@@ -1077,7 +1077,7 @@ invitedWorld|0]])
             else
               Sleep(800)
             end
-            LogToConsole("`9[DEDERIKA] `1Taking Consumable...")
+            LogToConsole("`bDOUGHLAS `1Taking Consumable...")
             local objects = GetObjectList() or {}
             for _, obj in pairs(objects) do  
               if obj.id == cid then
@@ -1106,7 +1106,7 @@ action|respawn
                 end
                 Sleep(DelayTake)
                 if inv(cid) > 0 then
-                  LogToConsole("`9[DEDERIKA] `2Successfully Take Item! ID=" .. cid)
+                  LogToConsole("`bDOUGHLAS `2Successfully Take Item! ID=" .. cid)
                   took = true
                 end
                 if not ghost then
@@ -1119,7 +1119,7 @@ action|respawn
               end
             end
           until inv(cid) >= 1
-          LogToConsole("`9[DEDERIKA] `2Consumables is ready! BFG Mode Actived!")
+          LogToConsole("`bDOUGHLAS `2Consumables is ready! BFG Mode Actived!")
           SendPacket(3, [[
 action|join_request
 name|]] .. WorldName .. [[
@@ -1140,7 +1140,7 @@ end
   function dialog(teks)
     Var0 = "OnDialogRequest"
     Var1 = [[
-add_label_with_icon|big|`2PNB BOTHAX V2  ||16224|
+add_label_with_icon|big|`2PNB DOUGHLAS  ||16224|
 add_spacer|small|
 add_textbox|GrowID : ]] .. GetLocal().name:match("%S+") .. [[
 ||
@@ -1151,8 +1151,8 @@ add_textbox|Position BFG : `6]] .. pnbX .. [[ `0, `6]] .. pnbY .. [[
 add_textbox|`8]] .. teks .. [[
 ||
 add_spacer|small|
-add_smalltext|Dederika Community.|
-add_url_button||`0Discord``|NOFLAGS|https://dsc.gg/dederika|Join my server.|0|
+add_smalltext|DOUGHLAS COMUNITY.|
+add_url_button||`0Discord``|NOFLAGS|https://discord.gg/AF3REYDqps|Join my server.|0|
 add_quick_exit|]]
     SendVariantList({
       [0] = Var0,
@@ -1219,7 +1219,7 @@ action|input
           AddHook("onvariant", "onvariant", onvariant)
           Sleep(1000)
           CheatTurnOff()
-          LogToConsole("`9[DEDERIKA] `1PnB On Progress...")
+          LogToConsole("`bDOUGHLAS `1PnB On Progress...")
           Sleep(1000)
           if PublicPNB then
             SendPacket(2, [[
@@ -1266,10 +1266,10 @@ local defaultConfig = {
   MaxGems = 400000,
   DelayTake = 1000,
   TakeConsumable = false,
-  WorldConsume = "DEDERIKA",
+  WorldConsume = "WISNHH",
   AutoBuyCheats = true,
   WebhookPNB = true,
-  WebhookUrl = "https://discord.com/api/webhooks/1345179059092455576/e3PRCqx0EGjBPk05xREOuw4Zwe6omkuGVeu0ULabr_3XnJqw82nF1BFy8X1rk713ZnqI",
+  WebhookUrl = "https://discord.com/api/webhooks/1433001434177081354/_F7ciCPCeznNDrHu_zR97U_AKP15IJYo5vg-gfodFHRbjhAPjsEH9zAWwZ3dM6sRi7V_",
   DiscordID = 0,
   IgnoreOther = false,
   MirrorPNB = false,
