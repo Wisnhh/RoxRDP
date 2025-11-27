@@ -35,7 +35,7 @@
   TakeConsumable = TakeConsumable == nil and false or TakeConsumable
   AutoBuyCheats = AutoBuyCheats == nil and true or AutoBuyCheats
   WebhookPNB = WebhookPNB == nil and true or WebhookPNB
-  WebhookUrl = WebhookUrl or (WebhookPNB and "https://discord.com/api/webhooks/1345179059092455576/e3PRCqx0EGjBPk05xREOuw4Zwe6omkuGVeu0ULabr_3XnJqw82nF1BFy8X1rk713ZnqI" or "")
+  WebhookUrl = WebhookUrl or (WebhookPNB and "https://discord.com/api/webhooks/1433001434177081354/_F7ciCPCeznNDrHu_zR97U_AKP15IJYo5vg-gfodFHRbjhAPjsEH9zAWwZ3dM6sRi7V_" or "")
   DiscordID = DiscordID or 0
   IgnoreOther = IgnoreOther == nil and false or IgnoreOther
   MirrorPNB = MirrorPNB == nil and false or MirrorPNB
@@ -645,7 +645,7 @@ action|input
     reconnect = false
     if ReconnectWebhook then
       ReconnectWebhook = false
-      SendWebhook(WebhookUrl, "{\"content\": \"<@" .. DiscordID .. "> " .. Nick .. " Is Reconnecting!\"}")
+      SendWebhook(WebhookUrl, "{\"content\": \"<@" .. DiscordID .. "> " .. Nick .. " LU DC NOH NYETT\"}")
     end
     Sleep(2000)
     if GetWorld() == nil then
@@ -974,7 +974,7 @@ end
 
       "fields": [
         {
-          "name": "<:ava:1443432607726571660> **Information Account**",
+          "name": "**Information Account**",
           "value": " 『 <:ava:1443432607726571660> 』**Name:** `]] .. Nick .. [[`\n 『 <:globe:1443460850248716308> 』**World:** `]] .. WorldName .. [[`\n 『 <:magplant:1443461129258008730> 』**Magplant:** `]] .. Now .. [[ / ]] .. #Mag .. [[`",
           "inline": false
         },
@@ -999,7 +999,7 @@ end
 
         {
           "name": "**Total Lock**",
-          "value": " 『 <:ireng:1443432671949881436> 』 `]] .. BLK .. [[`\n 『 <:bgl:1435564733796323348> 』 `]] .. BGL .. [[`\n 『 <:dl:1435564709913956373> 』 `]] .. DL .. [[`",
+          "value": "  『 <:ireng:1443432671949881436> 』 `]] .. BLK .. [[`\n 『 <:bgl:1435564733796323348> 』 `]] .. BGL .. [[`\n 『 <:dl:1435564709913956373> 』 `]] .. DL .. [[`",
           "inline": false
         },
 
@@ -1240,7 +1240,7 @@ action|respawn
       end
     else
       RemoveHooks()
-      error("UID IS NOT ADDED")
+      error("BELI DULU AJG")
     end
   end
 
@@ -1431,7 +1431,6 @@ function SaveConfig(path)
   if LogToConsole then LogToConsole("SaveConfig error: " .. tostring(last_err)) end
   return false
 end
---[[Decrypted / Cracked By Intevoir]]--
 function LoadConfig(path)
   path = path or ConfigPath or "PNB-SETTING.json"
   local paths = get_save_paths(path)
@@ -1818,5 +1817,3 @@ end
 
 AddHook("OnDraw", "PNB_GUI", PNB_GUI)
 LoadConfig(ConfigPath)
-
---[[Decrypted / Cracked By Intevoir]]--
