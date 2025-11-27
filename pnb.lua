@@ -1595,7 +1595,7 @@ end
 --[[Decrypted / Cracked By Intevoir]]--
 function PNB_GUI()
   GUI_open = GUI_open == nil and true or GUI_open
-  local ok = ImGui.Begin("PNB - BOTHAX V2 - Settings")
+  local ok = ImGui.Begin("PNB - DOUGHLAS")
   if not ok then ImGui.End(); return end
 
   if ImGui.Button("Save") then
