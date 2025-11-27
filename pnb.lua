@@ -195,7 +195,7 @@ end
 function CheckTime()
   if not os then return end
   local now = os.time()
-  if now - (LastTime or 0) >= 300 and GetWorld() ~= nil and GetRemote and WebhookPNB then
+  if now - (LastTime or 0) >= 1800 and GetWorld() ~= nil and GetRemote and WebhookPNB then
     if WebhookPNB then
       SendInfoPNB()
       Sleep(1000)
