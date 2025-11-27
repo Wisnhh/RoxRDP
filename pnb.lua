@@ -966,45 +966,39 @@ end
 {
   "embeds": [
     {
-      "title": "🛠️ AUTO PNB STATUS",
+      "title": "<:eaa:1440243162080612374> DOUGHLAS PNB STATUS",
       "color": 2895667,
       "thumbnail": {
-        "url": "https://pin.it/2kq04LNXk"
+        "url": "https://cdn.discordapp.com/attachments/961043626782228500/1443455382071804035/Doughlas_Jasa.jpg?ex=69292215&is=6927d095&hm=d1e2c833298319e1133079723eece10b78cfbf759090936ead98acd1d86e926e"
       },
 
       "fields": [
         {
-          "name": "📄 **Information Account**",
+          "name": "<:ava:1443432607726571660> **Information Account**",
           "value": "**Status:** Breaking Block With Taking Black Gems\n**Name:** `]] .. Nick .. [[`\n**World:** `]] .. WorldName .. [[`\n**Magplant:** `]] .. Now .. [[ / ]] .. #Mag .. [[`",
           "inline": false
         },
 
         {
-          "name": "🥗 **Consumable Stock**",
-          "value": "🍙 Arroz: `]] .. Arroz .. [[`\n🍀 Clover: `]] .. Clover .. [[`\n🎐 Songpyeon: `]] .. Songpyeon .. [[`",
+          "name": "**Consumable Stock**",
+          "value": "<:arroz:1435565886638526598> Arroz: `]] .. Arroz .. [[`\n<:clover:1432995542367211561> Clover: `]] .. Clover .. [[`\n<:songpyeon:1432995023682801664> Songpyeon: `]] .. Songpyeon .. [[`",
           "inline": false
         },
 
         {
-          "name": "💎 **Gems Information**",
-          "value": "**Current:** `]] .. FNum(Gems) .. [[`\n**PGems:** `]] .. FNum(PGems) .. [[`\n**BGems:** `]] .. FNum(BGems) .. [[`",
+          "name": "**Floating Items**",
+          "value": "<:bgems:1443432737317982342> Black Gems: `]] .. BGems .. [[`\n<:pgems:1443432703365087385> Pink Gems: `]] .. PGems .. [[`",
           "inline": false
         },
 
         {
-          "name": "📦 **Floating Items**",
-          "value": "🖤 Black Gems: `]] .. BGems .. [[`\n💗 Pink Gems: `]] .. PGems .. [[`",
+          "name": "**Total Lock**",
+          "value": "<:ireng:1443432671949881436>: `]] .. BLK .. [[`\n<:dl:1435564709913956373>: `]] .. DL .. [[`\n<:bgl:1435564733796323348>: `]] .. BGL .. [[`",
           "inline": false
         },
 
         {
-          "name": "🔐 **Total Lock**",
-          "value": "🟪 Black Lock: `]] .. BLK .. [[`\n🔷 Diamond Lock: `]] .. DL .. [[`\n🟦 Blue Gem Lock: `]] .. BGL .. [[`",
-          "inline": false
-        },
-
-        {
-          "name": "⏳ **PNB Uptime**",
+          "name": "**PNB Uptime**",
           "value": "`]] .. FTime(os.time() - StartTime) .. [[`",
           "inline": false
         }
