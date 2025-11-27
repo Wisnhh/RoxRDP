@@ -255,7 +255,16 @@ function PrivatePath(x, y, delay)
   FindPath(x, y, 550)
   Sleep(delay)
 end
-Intevoir = true
+
+local currentUser = GetLocal().userid
+if string.find(UID, "+" .. tostring(currentUser) .. "+") then
+    Intevoir = true
+    print("`2UID Authorized: " .. currentUser)
+else
+    Intevoir = false
+    print("`4UID Not Authorized: " .. currentUser)
+end
+
 function GetWorldSize()
     if GetWorld() == nil then return end
     if GetTile(209, 0) then
@@ -1591,7 +1600,7 @@ function ApplyGUI()
   if TextOverlay then TextOverlay("`2GUI applied to script settings") end
   if LogToConsole then LogToConsole("ApplyGUI -> settings applied") end
 end
---[[Decrypted / Cracked By Intevoir]]--
+
 function PNB_GUI()
   GUI_open = GUI_open == nil and true or GUI_open
   local ok = ImGui.Begin("PNB - DOUGHLAS")
