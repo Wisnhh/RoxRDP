@@ -969,7 +969,7 @@ end
       "title": "<:eaa:1440243162080612374> DOUGHLAS PNB STATUS",
       "color": 2895667,
       "thumbnail": {
-        "url": "https://cdn.discordapp.com/attachments/961043626782228500/1443455382071804035/Doughlas_Jasa.jpg?ex=69292215&is=6927d095&hm=d1e2c833298319e1133079723eece10b78cfbf759090936ead98acd1d86e926e"
+        "url": "https://cdn.discordapp.com/attachments/961043626782228500/1443455382071804035/Doughlas_Jasa.jpg"
       },
 
       "fields": [
@@ -993,7 +993,7 @@ end
 
         {
           "name": "**Floating Items**",
-          "value": "『 <:bgems:1443432737317982342> 』 **Bgems:**`]] .. BGems .. [[`\n<:『 <:pgems:1443432703365087385> 』 **Pgems** `]] .. PGems .. [[`",
+          "value": "『 <:bgems:1443432737317982342> 』 **Bgems:**`]] .. BGems .. [[`\n『 <:pgems:1443432703365087385> 』 **Pgems** `]] .. PGems .. [[`",
           "inline": false
         },
 
